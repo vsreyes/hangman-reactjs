@@ -16,7 +16,7 @@ const Popup = ({
     finalMessage = 'Congratulations! You won!🏆';
     playable = false;
   } else if (checkWin(correctLetters, wrongLetters, selectedWord) === 'lose') {
-    finalMessage = 'Unfortunately you lost.😭';
+    finalMessage = 'Unfortunately you lost😭';
     finalMessageRevealWord = `...the word was: ${selectedWord}`;
     playable = false;
   }
