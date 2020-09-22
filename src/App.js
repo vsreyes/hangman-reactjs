@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Figure from './components/Figure';
 import WrongLetters from './components/WrongLetters';
 import Word from './components/Word';
-import Word from './components/Popup';
+import Popup from './components/Popup';
 import Notification from './components/Notification';
 import { showNotification as show, checkWin } from './helpers/helpers';
 
@@ -58,7 +58,7 @@ function App() {
     <>
       <Header />
       <div className='game-container'>
-        <figure wrongLetters={wrongLetters} />
+        <Figure wrongLetters={wrongLetters} />
         <WrongLetters wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
@@ -67,7 +67,7 @@ function App() {
         wrongLetters={wrongLetters}
         selectedWord={selectedWord}
         setPlayable={setPlayable}
-        playAgain={playable}
+        playAgain={playAgain}
       />
       <Notification showNotification={showNotification} />
     </>

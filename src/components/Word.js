@@ -5,7 +5,7 @@ const Word = ({ selectedWord, correctLetters }) => {
     <div className='word'>
       {selectedWord.split('').map((letter, i) => {
         return (
-          <span className='Letter' key={i}>
+          <span className='letter' key={i}>
             {correctLetters.includes(letter) ? letter : ''}
           </span>
         );

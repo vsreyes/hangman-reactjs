@@ -27,7 +27,7 @@ const Popup = ({
 
   return (
     <div
-      className='pop-container'
+      className='popup-container'
       style={finalMessage !== '' ? { display: 'flex' } : {}}
     >
       <div className='popup'>
